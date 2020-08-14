@@ -1,0 +1,17 @@
+apply plugin:'war'
+apply plugin:'jetty'
+
+
+repositories{
+    mavenCentral()
+  }
+
+  dependencies{
+          // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+
+  }
+
+  // >gradle war
+  // copy war file to  <Tomcat_home>\webapps folder   by collecting it from
+  //  build/libs folder..

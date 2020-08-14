@@ -1,0 +1,25 @@
+package com.nt.test;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
+
+public class TestClient {
+
+	public static void main(String[] args) {
+		  Resource res=null;
+		  BeanFactory factory=null;
+		  //Locate Spring bean cfg file
+		  res=new FileSystemResource("src/main/java/com/nt/cfgs/applicationContext.xml");
+		  System.out.println("Spring bean cfg file is located");
+		  //create IOC container
+		  factory=new XmlBeanFactory(res);
+		  System.out.println("Spring IOC container is created");
+		  
+		  
+		  
+
+	}
+
+}

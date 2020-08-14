@@ -1,0 +1,2 @@
+arrange pom.xml
+> gradle init  --type=pom

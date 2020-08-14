@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="GradleWebProj">
+        <property name="context-root" value="GradleWebProj"/>
+        <property name="java-output-path" value="/GradleWebProj/bin/default"/>
+    </wb-module>
+</project-modules>

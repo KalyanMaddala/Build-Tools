@@ -1,0 +1,46 @@
+apply plugin:'application'
+version= '1.0'
+ 
+ repositories{
+    mavenCentral()
+    jcenter()
+    //mavenLocal()
+    maven{
+     url  "http://clojars.org/repo/"
+    }
+ }
+
+ sourceSets{
+  main{
+    java{
+      srcDir 'source/kava'
+    }
+  }
+
+  test{
+   java{
+      srcDir 'source/bava'
+   }
+  }
+}
+
+ dependencies{
+      // https://mvnrepository.com/artifact/junit/junit
+testCompile group: 'junit', name: 'junit', version: '4.12'
+
+   // https://mvnrepository.com/artifact/junit/junit
+//compile group: 'com.nt', name: 'ojdbc6', version: '11.2'
+
+// https://mvnrepository.com/artifact/kephale/matlabcontrol
+compile group: 'kephale', name: 'matlabcontrol', version: '4.1.0'
+
+compile files ('C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\jdbc\\lib\\ojdbc6.jar')
+
+ }
+
+mainClassName='com.nt.java.DemoApp'
+
+//>gradle test
+//>gradle  test run
+
+

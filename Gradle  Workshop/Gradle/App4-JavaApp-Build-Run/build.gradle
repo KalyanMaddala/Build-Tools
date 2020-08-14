@@ -1,0 +1,20 @@
+apply plugin:'application'
+version= '1.0'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.nt.java.DemoApp'
+    }
+}
+
+mainClassName='com.nt.java.DemoApp'
+task myTask(type:Wrapper)
+
+//>gradle  tasks --all
+//> gradle clean  run build
+//> gradle myTask
+//>now deactive gradle in computer....  by removing gradle related  things from
+// env.. variables
+//> gradlew  clean run build
+//> gradlew  javadoc
+

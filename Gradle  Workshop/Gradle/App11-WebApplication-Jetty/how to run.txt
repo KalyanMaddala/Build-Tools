@@ -1,0 +1,7 @@
+/* how to run
+> gradle build
+  or
+>> gradle war
+->Stop oracle services from services.msc
+->url :: http://localhost:8080/App10-Web-Jetty
+*/

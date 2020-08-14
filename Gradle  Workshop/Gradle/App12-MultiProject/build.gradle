@@ -1,0 +1,42 @@
+allprojects{
+ apply  plugin: 'java'
+ repositories{
+     mavenCentral()
+  } 
+}
+
+dependencies{
+   compile project(':SubProj1')
+    compile project(':SubProj2')
+}
+
+project (':SubProj1'){
+   dependencies{
+      compile files ('C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar')
+   }
+}
+
+project (':SubProj2'){
+   dependencies{
+       // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+         compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+   }
+}
+
+
+task task1( type: JavaExec) {
+    main = 'com.nt.mp.MainApplication'
+    classpath =sourceSets.main.runtimeClasspath
+       }
+ defaultTasks 'task1' 
+
+
+//>gradle  task1
+
+/*
+  -> arrage SubProj1,SubProj2,src and its sub folders
+  -> arrange settings.gradle,build.gradle..
+  >gradle
+
+
+*/

@@ -1,0 +1,32 @@
+/*task  t1{
+  doLast { 
+     println "welcome to gradle"
+    }
+}*/
+
+/*task  t1 <<{
+    println "welcome to gradle"
+ }*/
+
+/*task t1 {
+    println "welcome to gradle1"
+ }*/
+
+/*task t1
+ t1{
+   doLast { println "welcome to gradle2"}
+  }*/
+
+ task t1
+ t1{
+    println "welcome to gradle3"
+ }
+
+ //how to run
+ //  > gradle  tasks -all
+ //> gradle t1
+ //> gradel -q t1
+
+
+    
+   

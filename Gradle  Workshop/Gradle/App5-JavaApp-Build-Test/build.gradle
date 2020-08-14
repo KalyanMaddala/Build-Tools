@@ -1,0 +1,19 @@
+apply plugin:'application'
+version= '1.0'
+ 
+ repositories{
+    mavenCentral()
+ }
+
+ dependencies{
+      // https://mvnrepository.com/artifact/junit/junit
+testCompile group: 'junit', name: 'junit', version: '4.12'
+
+ }
+
+mainClassName='com.nt.java.DemoApp'
+
+//>gradle test
+//>gradle  test run
+
+

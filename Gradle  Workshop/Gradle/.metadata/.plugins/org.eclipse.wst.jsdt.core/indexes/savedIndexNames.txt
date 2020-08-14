@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+G:\Worskpaces\WorkShops\Gradle\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+11845427.index
+819867476.index
+62917737.index
+3773518963.index
+822328125.index
+455298096.index
